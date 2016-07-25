@@ -1,0 +1,12 @@
+use pnet_macros_support::types::*;
+
+mod test {
+    #[packet]
+    pub struct TestBeOne {
+        val3: u3be,
+        val6: u6be,
+        val7: u7be,
+        #[payload]
+        payload: Vec<u8>,
+    }
+}
